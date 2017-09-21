@@ -6,8 +6,20 @@ class Product < ApplicationRecord
 		with: %r{\.(gif|jpg|png)\Z}i,
 		message: 'must be a url for GIF, JPG or PNG image.'
 	}
+	has_many :lines
+	before_destroy :ensure_not_referenced_by_any_line_item
 
 	def self.latest
 		Product.order(:updated_at).last
 	end
+
+	private
+	  def ensure_not_referenced_by_any_line_item
+	  	if line_items.empty?
+	  		return true
+	  	else
+	  		errors.add(:base, 'Line Items present')
+	  		return false
+	  	end
+	  end  
 end
