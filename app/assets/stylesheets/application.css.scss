@@ -45,11 +45,30 @@ img {
 		}
 
 	#side {
-		float: left;
-		padding: 1em 2em;
-		width: 13em;
-		background: #141;
-	
+	float: left;
+	padding: 1em 2em;
+	width: 13em;
+	background: #141;
+	form, div {
+		display: inline;
+	}
+
+	input {
+		font-size: small;
+	}
+
+	#cart {
+		font-size: smaller;
+		color: white;
+	}
+
+	table {
+		bord-top: 1px dotted #595;
+		border-bottom: 1px dotted #595;
+		margin-bottom: 10px;
+	}
+}
+
 		ul {
 			padding: 0;
 			li {
@@ -61,4 +80,3 @@ img {
 			}
 		}
 	}
-}
