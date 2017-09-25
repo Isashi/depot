@@ -6,7 +6,8 @@ class Product < ApplicationRecord
 		with: %r{\.(gif|jpg|png)\Z}i,
 		message: 'must be a url for GIF, JPG or PNG image.'
 	}
-	has_many :lines
+	has_many :line_items
+	has_many :orders, through: :lines_items
 	before_destroy :ensure_not_referenced_by_any_line_item
 
 	def self.latest
