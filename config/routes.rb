@@ -7,15 +7,24 @@ Rails.application.routes.draw do
     delete 'logout' => :destroy
   end
 
+  get "sessions/create"#
+  get "sessions/destroy"#
+
+  #resources :orders
+  #resources :line_items
+  #resources :carts
+  #get 'store/index'
   resources :users
-  resources :orders
-  resources :line_items
-  resources :carts
-  get 'store/index'
   resources :products do
   	get :who_bought, on: :member
   end
 
+  scope '(:locale)' do
+    resources :orders
+    resources :line_items
+    resources :carts
+    root 'store#index', as: 'store', via: :all
+  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root 'store#index', as: 'store'
+  #root 'store#index', as: 'store'
 end
