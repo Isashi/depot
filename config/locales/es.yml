@@ -39,8 +39,6 @@ es:
       pay_prompt_html:  "Seleccione un m&eacute;todo de pago"
       submit:           "Realizar Pedido"
 
-
-
   activerecord:
     errors:
       messages:
@@ -61,7 +59,6 @@ es:
       header:
         one:            "1 error ha impedido que este %{model} se guarde"
         other:          "%{count} errores han impedido que este %{model} se guarde"
-
 
   thanks:               "Gracias por su pedido"
   emptycart:            "Su carrido esta vacio"

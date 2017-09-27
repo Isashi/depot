@@ -1,0 +1,65 @@
+it:
+  layouts:
+    application:
+      title:            "Libreria Pragmatica"
+      home:             "Home"
+      questions:        "Domande"
+      news:             "Notizie"
+      contact:          "Contatti"
+
+  store:
+    index:
+      title_html:       "Il tuo catalogo pragmatico"
+      add_html:         "Aggiungi al carrello"
+
+  carts:
+    cart:
+      title:            "Carrello"
+      empty:            "Svuota carrello"
+      checkout:         "Compra"
+      confirmation:     "Sei sicuro?"
+
+  number:
+    currency:
+      format:
+        unit:           "€"
+        precision:       2
+        separator:      ","
+        delimiter:      "."
+        format:         "%n&nbsp;%u"
+
+  orders:
+    new:
+      legend:           "Per favore, introduci i tuoi dati"
+    form:
+      name:             "Nome"
+      address_html:     "Indirizzo"
+      email:            "E-mail"
+      pay_type:         "Tipo di pagamento"
+      pay_prompt_html:  "Seleziona tipo di pagamento"
+      submit:           "Inoltra ordine"
+
+  activerecord:
+    errors:
+      messages:
+        inclusion:      "non è incluso nella lista"
+        blank:          "no può essere bianco"
+    models:
+        order:          "ordine"
+    attributes:
+        order:
+          name:         "Nome"
+          address:      "Indirizzo"
+          email:        "E-mail"
+          pay_type:     "Tipo di pagamento"
+      
+  errors:
+    template:
+      body:             "Ci sono problemi con i seguenti campi:"
+      header:
+        one:            "1 errore ha impedito che il tuo %{model} si generasse"
+        other:          "%{count} errori hanno impedito che il tuo %{model} si generasse"
+
+
+  thanks:               "Grazie per il tuo ordine"
+  emptycart:            "Il tuo carrello è vuoto"
