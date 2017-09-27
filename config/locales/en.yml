@@ -49,3 +49,12 @@ en:
       checkout:         "Checkout"
       empty:            "Empty Cart"
       confirmation:     "Are you sure?"
+
+  number:
+    currency:
+      format:
+        unit:           "EUR"
+        precision:       2
+        separator:      "."
+        delimiter:      ","
+        format:         "%u %n" 

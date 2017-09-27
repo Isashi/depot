@@ -18,3 +18,12 @@ es:
       empty:            "Vaciar Carrito"
       checkout:         "Comprar"
       confirmation:     "Esta seguro?"
+
+  number:
+    currency:
+      format:
+        unit:           "€"
+        precision:       2
+        separator:      ","
+        delimiter:      "."
+        format:         "%n&nbsp;%u"
