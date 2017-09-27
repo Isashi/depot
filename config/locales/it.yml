@@ -43,7 +43,7 @@ it:
     errors:
       messages:
         inclusion:      "non è incluso nella lista"
-        blank:          "no può essere bianco"
+        blank:          "non può essere bianco"
     models:
         order:          "ordine"
     attributes:
@@ -59,7 +59,6 @@ it:
       header:
         one:            "1 errore ha impedito che il tuo %{model} si generasse"
         other:          "%{count} errori hanno impedito che il tuo %{model} si generasse"
-
 
   thanks:               "Grazie per il tuo ordine"
   emptycart:            "Il tuo carrello è vuoto"
